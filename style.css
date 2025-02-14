@@ -1,0 +1,164 @@
+/* General Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0044cc;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    gap: 100px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-img {
+    width: 35px;
+    height: auto;
+}
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Section Styling */
+.section {
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Home Section */
+#home { 
+    background-color: #e6f0ff; 
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Try Now Button */
+.try-now-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #0044cc;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.try-now-button:hover {
+    background-color: #002a80;
+}
+
+/* About Section */
+#about {
+    background-color: #cce0ff;
+    padding: 50px;
+    text-align: center;
+    height: 50vh;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* News Section */
+#news { 
+    background-color: #b3d1ff; 
+    height: 20vh; 
+}
+
+/* Download Section */
+#download {
+    background-color: #678bd1;
+    color: white;
+    height: 30vh;
+}
+
+.button {
+    background-color: white;
+    color: #0044cc;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Contact Section */
+#contact { 
+    background-color: #255db3;
+    color: white; 
+    height: 10vh; 
+}

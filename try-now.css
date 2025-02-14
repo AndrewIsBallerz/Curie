@@ -1,0 +1,201 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0044cc;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* User controls section */
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Reduced gap between icons */
+    color: white;
+    margin-right: 20px; /* Added margin to shift content to the left */
+}
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.user-controls i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Main content */
+main {
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Program grid */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Changed auto-fill to auto-fit for better centering */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the grid items */
+    max-width: 1200px; /* Optional: Limit the maximum width of the grid */
+    margin: 0 auto; /* Center the grid container itself */
+}
+
+.program-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 250px; /* Fixed width for each card */
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.program-card h3 {
+    margin: 10px 0 5px;
+}
+
+.program-card p {
+    color: #666;
+    font-size: 14px;
+}
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #0044cc;
+    padding: 80px 20px 20px; /* Added top padding to move categories down */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+/* Category styles */
+.category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Special style for "Create" */
+.category.create {
+    background-color: #ff6f61; /* Different color */
+    border: 2px solid white; /* Outline */
+    font-size: 18px; /* Bigger text */
+    font-weight: bold; /* Bold text */
+    padding: 20px; /* More padding */
+    margin-bottom: 20px; /* Extra space below */
+}
+
+.category.create i {
+    font-size: 24px; /* Bigger icon */
+}
+
+/* Icons */
+.category i {
+    font-size: 20px;
+}
+
+/* Adjust main content to account for sidebar */
+main {
+    margin-left: 250px; /* Push content to the right */
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+/* Settings Button */
+.settings-button {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom of the sidebar */
+    left: 20px; /* Align with the sidebar padding */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.settings-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+}
+
+/* Gear Icon */
+.gear-icon {
+    width: 24px;
+    height: 24px;
+}
